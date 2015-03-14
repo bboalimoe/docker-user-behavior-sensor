@@ -15,12 +15,12 @@ RUN pip install Django
 RUN mkdir /scipy
 
 # scipy install
-#WORKDIR /scipy
-#RUN apt-get install python python-dev atlas3-base-dev gcc g77 g++
-#RUN git clone https://github.com/scipy/scipy.git
-#RUN cd scipy
-#RUN git clean -xdf
-#RUN python setup.py install
+WORKDIR /scipy
+RUN apt-get install python python-dev atlas3-base-dev gcc g77 g++
+RUN git clone https://github.com/scipy/scipy.git
+RUN cd scipy
+RUN git clean -xdf
+RUN python setup.py install
 
 WORKDIR /app
 
