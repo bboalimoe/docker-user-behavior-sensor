@@ -35,7 +35,7 @@ settings.configure(
     TEMPLATE_DIRS=(
         os.path.join(BASE_PATH, 'templates'),
     ),
-     WSGI_APPLICATION = 'app.wsgi.application',
+     WSGI_APPLICATION = "server.application",
 )
 
 from django.core.wsgi import get_wsgi_application
